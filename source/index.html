@@ -10,14 +10,14 @@
           integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
           crossorigin="anonymous" />
     <link rel="stylesheet"
-          href="/source/css/style.css" />
+          href="css/style.css" />
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="container">
+      <div class="container" style="background-color: black;">
         <a class="page-header__logo"
            href="#">
-          <img src="/source/img/logo/pink.svg"
+          <img src="img/logo/pink.svg"
                alt="Логотип приложения Пинк"
                width="74"
                height="23">
@@ -27,14 +27,21 @@
                   type="button">
             <span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__list">
-              <li class="nav__item nav__item--current">
-                <a>Главная</a></li>
-              <li class="nav__item">
-                <a href="foto.html">Фотографии</a></li>
-              <li class="nav__item">
-                   <a href="form.html">Конкурс</a></li>
-              <li class="nav__item">
-                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+              <li class="main-nav__item main-nav__item--current">
+                <a class="main-nav__link">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link"
+                   href="foto.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                   <a class="main-nav__link"
+                      href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link"
+                   href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
             </ul>
         </nav>
       </div>
@@ -48,30 +55,33 @@
           <a class="download-app__link"
              href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
           <ul class="download-app__icon-list">
-            <li class="download-app__apple-icon-item">
-              <a class="download-app__apple-icon-link"
+            <li class="download-app__icon-item">
+              <a class="download-app__icon-link"
                  href="#">
-                <img src="/source/img/icon/apple-icon.svg"
+                <img src="img/icon/apple-icon.svg"
                      alt="Приложение для Apple"
                      width="47"
                      height="56">
-              </a></li>
-              <li class="download-app__android-icon-item">
-                <a class="download-app__android-icon-link"
+              </a>
+            </li>
+              <li class="download-app__icon-item">
+                <a class="download-app__icon-link"
                    href="#">
-                  <img src="/source/img/icon/android-icon.svg"
+                  <img src="img/icon/android-icon.svg"
                        alt="Приложение для Android"
                        width="43"
                        height="47">
-                </a></li>
-                <li class="download-app__microsoft-icon-item">
-                  <a class="download-app__microsoft-icon-link"
+                </a>
+              </li>
+                <li class="download-app__icon-item">
+                  <a class="download-app__icon-link"
                      href="#">
-                    <img src="/source/img/icon/microsoft-icon.svg"
+                    <img src="img/icon/microsoft-icon.svg"
                          alt="Приложение для Microsoft"
                          width="44"
                          height="41">
-                  </a></li>
+                  </a>
+                </li>
           </ul>
           <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
@@ -86,15 +96,15 @@
           <dl class="features__list">
             <div class="features__item">
               <dt class="features__title">Поднимает настроение</dt>
-              <dd class="features__discription">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</dd>
+              <dd class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</dd>
             </div>
             <div class="features__item">
               <dt class="features__title">Меняет мир вокруг</dt>
-              <dd class="features__discription">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</dd>
+              <dd class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</dd>
             </div>
             <div class="features__item">
               <dt class="features__title">Заводит новых друзей</dt>
-              <dd class="features__discription">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</dd>
+              <dd class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</dd>
             </div>
           </dl>
       </section>
@@ -102,21 +112,25 @@
         <div class="container">
           <h2 class="visually-hidden">Эффект от использования приложения</h2>
           <div class="effect__content">
-            <h3 class="effect__tittle">Эффект на 24 часа!</h3>
+            <h3 class="effect__title">Эффект на 24 часа!</h3>
             <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-            <a class="effect__link" href="#">Узнать больше об исследовании</a>
+            <a class="effect__link"
+               href="#">Узнать больше об исследовании</a>
           </div>
         </div>
       </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы о приложении Пинк</h2>
-        <div class="container slider">
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item reviews__item--current">
+        <div class="container">
+          <div class="reviews__list">
+            <blockquote class="reviews__item reviews__item--current">
               <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на
                 привычные серые вещи! А еще я познакомился со своей будущей женой в
                 комментариях к выложенной фотографии!</p>
-              <cite class="reviews__author"><b class="reviews__author-name">Николай Петров</b> <span class="reviews__author-age">25 лет, водитель трамвая</span></cite>
+              <cite class="reviews__author">
+                <b class="reviews__author-name">Николай Петров</b>
+                <span class="reviews__author-age">25 лет, водитель трамвая</span>
+              </cite>
             </blockquote>
             <button class="reviews__prev"
                     type="button"
@@ -125,7 +139,7 @@
                     type="button"
                     aria-label="Следующий отзыв"></button>
           </div>
-          <div class="reviews__toggles slider__toggles">
+          <div class="reviews__toggles">
             <button class="reviews__toggle reviews__toggle--current"
                     type="button"
                     aria-label="Первый слайд"></button>
@@ -140,29 +154,29 @@
       </section>
       <section class="price">
         <h2 class="visually-hidden">Стоимость комплектации приложения Пинк</h2>
-        <div class="container slider">
+        <div class="container">
           <table class="price__table">
             <caption class="visually-hidden">Стоимость тарифов приложения</caption>
             <thead>
               <tr>
                 <th class="price__empty-cell"></th>
                 <th class="price__headcell">
-                  <span class="price__tarif">База</span>
+                  <span class="price__tariff">База</span>
                   <span class="price__value">1,99 USD</span>
                 </th>
                 <th class="price__headcell price__headcell-hit price__headcell-hit--current">
-                  <span class="price__tarif">Стандарт</span>
+                  <span class="price__tariff">Стандарт</span>
                   <span class="price__value">3,99 USD</span>
                 </th>
                 <th class="price__headcell">
-                  <span class="price__tarif">Анлим</span>
+                  <span class="price__tariff">Анлим</span>
                   <span class="price__value">9,99 USD</span>
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th class="price__tarif-element">Розовый фильтр</th>
+                <th class="price__tariff-element">Розовый фильтр</th>
                 <td class="price__cell price__cell--yes">
                   <span class="visually-hidden">Есть</span>
                 </td>
@@ -174,7 +188,7 @@
                 </td>
               </tr>
               <tr>
-                <th class="price__tarif-element">Смайлики</th>
+                <th class="price__tariff-element">Смайлики</th>
                 <td class="price__cell price__cell--no">
                   <span class="visually-hidden">Нет</span>
                 </td>
@@ -186,7 +200,7 @@
                 </td>
               </tr>
               <tr>
-                <th class="price__tarif-element">Комментарии</th>
+                <th class="price__tariff-element">Комментарии</th>
                 <td class="price__cell price__cell--no">
                   <span class="visually-hidden">Нет</span>
                 </td>
@@ -199,8 +213,8 @@
               </tr>
             </tbody>
           </table>
-          <div class="price__toggles slider__toggles">
-            <button class="price__toggle reviews__toggle--current"
+          <div class="price__toggles">
+            <button class="price__toggle price__toggle--current"
                     type="button"
                     aria-label="Переключить на базовый тариф"></button>
             <button class="price__toggle"
@@ -222,7 +236,7 @@
                  href="tel:+78125556666">+7 (812) 555-66-66</a>
             </li>
             <li class="contacts__item">Пишите:
-              <a class="contacts__imail"
+              <a class="contacts__email"
                  href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
             <li class="contacts__item">Приезжайте в гости:
@@ -244,7 +258,7 @@
         <a class="page-footer__logo"
            href="#"
            title="Главная страница приложения Пинк">
-          <img src="/source/img/logo/pink.svg"
+          <img src="img/logo/pink.svg"
                alt="Логотип приложения Пинк"
                width="74"
                height="23">
@@ -294,9 +308,9 @@
             </a>
           </li>
         </ul>
-        <div class="page-footer__copyright">
-          <span class="page-footer__copyright-text">Разработано</span>
-          <a class="page-footer__copyright-link"
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link"
              href="https://htmlacademy.ru/intensive/adaptive"
              title="Интенсив HTML и CSS. Адаптивная вёрстка и автоматизация.">
             <svg width="27"
