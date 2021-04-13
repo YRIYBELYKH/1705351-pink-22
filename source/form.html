@@ -59,7 +59,7 @@
               action="#"
               method="POST"
               enctype="multipart/form-data">
-          <fieldset class="contest-form__full-name">
+          <fieldset class="contest-form__fieldset">
             <legend class="visually-hidden">Как вас зовут</legend>
             <ul class="contest-form__list">
               <li class="contest-form__item">
@@ -90,8 +90,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contest-form__achievements">
-            <legend class="contest-form__form-title">Ваши безбашенные достижения в путешествии</legend>
+          <fieldset class="contest-form__fieldset">
+            <legend class="contest-form__legend">Ваши безбашенные достижения в путешествии</legend>
             <input class="visually-hidden"
                    type="checkbox"
                    name="achievements"
@@ -138,8 +138,8 @@
             <label class="contest-form__checkbox-label"
                    for="checkbox6">Разгромил отель</label>
           </fieldset>
-          <fieldset class="contest-form__contacts">
-            <legend class="contest-form__form-title">Контактная информация</legend>
+          <fieldset class="contest-form__fieldset">
+            <legend class="contest-form__legend">Контактная информация</legend>
             <ul class="contest-form__list">
               <li class="contest-form__item">
                 <label class="contest-form__label">Номер телефона
@@ -160,8 +160,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contest-form__os">
-            <legend class="contest-form__form-title">С каким приложением путешествовали?</legend>
+          <fieldset class="contest-form__fieldset">
+            <legend class="contest-form__legend">С каким приложением путешествовали?</legend>
             <ul class="contest-form__list">
               <li class="contest-form__item">
                 <input class="visually-hidden"
@@ -191,9 +191,9 @@
             </ul>
           </fieldset>
           <div class="contest-form__emotions">
-            <label class="contest-form__form-title"
+            <label class="contest-form__legend"
                    for="message">Опишите свои эмоции</label>
-            <textarea class="contest-form__emotions-textaria field-massage"
+            <textarea class="contest-form__emotions-textarea"
                       name="message"
                       id="message"
                       placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -278,7 +278,7 @@
       </div>
     </footer>
     <div class="popup">
-      <div class="popup-wrapper form-popup">
+      <div class="popup__wrapper form-popup">
         <strong class="form-popup__title">Что-то пошло не так!</strong>
         <p class="form-popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <div class="form-popup__inner">
@@ -287,7 +287,7 @@
         </div>
       </div>
       <div class="popup">
-        <div class="popup-wrapper form-popup">
+        <div class="popup__wrapper form-popup">
           <strong class="form-popup__title">Ваша заявка отправлена</strong>
           <p class="form-popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
           <div class="form-popup__inner">
