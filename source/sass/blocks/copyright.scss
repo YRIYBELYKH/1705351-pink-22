@@ -1,0 +1,29 @@
+.copyright {
+  @include flex;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.copyright__text {
+  margin-right: 14px;
+
+  @media (min-width: 1200px) {
+    font-size: 18px;
+    margin-right: 12px;
+  }
+}
+
+.copyright__link {
+  @include link;
+  fill: $lightred;
+
+  &:hover {
+    fill: $basickgrey;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  transition: all 0.3s ease 0s;
+}

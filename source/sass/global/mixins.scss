@@ -1,0 +1,85 @@
+@mixin link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@mixin text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin toggle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $alphabasickgrey;
+  border: none;
+  margin-right: 19px;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($basickgrey, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($basickgrey, 0.1);
+  }
+
+  &--current {
+    border: 3px solid $darkgray;
+    background-color: $basicwhite;
+    box-sizing: unset;
+
+    &:hover,
+    &:active {
+      background-color: $basicwhite;
+    }
+  }
+}
+
+@mixin hover-fill {
+  &:hover {
+    fill: $lightred;
+  }
+
+  &:active {
+    fill: rgba($basicwhite, 0.3);
+  }
+
+  transition: fill 0.3s ease 0s;
+}
+
+@mixin hover-color-red {
+  &:hover {
+    color: $lightred;
+  }
+
+  &:active {
+    color: rgba($lightred, 0.3);
+  }
+
+  transition: all 0.3s ease 0s;
+}
+
+@mixin hover-color-white {
+  &:hover {
+    color: $lightred;
+  }
+
+  &:active {
+    color: rgba($basicwhite, 0.3);
+  }
+
+  transition: all 0.3s ease 0s;
+}

@@ -1,0 +1,73 @@
+.effect {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+  }
+
+  @media (min-width: 1200px) {
+    background-color: $light-background;
+  }
+}
+
+.effect__inner {
+  background-image: url("/img/timer.svg");
+  background-repeat: no-repeat;
+  background-size: 238px auto;
+  background-position: left top 54px;
+  padding: 104px 0 80px 310px;
+  min-height: 330px;
+  position: relative;
+
+  &::before {
+    content: "24";
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 163px;
+    text-align: center;
+    color: $lightred;
+    position: absolute;
+    left: 18px;
+    top: 110px;
+    width: 202px;
+    height: 202px;
+    border: 16px solid $lightred;
+    border-radius: 50%;
+
+    @media (min-width: 1200px) {
+      width: 252px;
+      height: 252px;
+      border-width: 18px;
+      font-size: 120px;
+      left: 23px;
+      top: 124px;
+      line-height: 200px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 429px;
+    padding: 115px 0 120px 370px;
+    background-size: 298px 345px;
+  }
+}
+
+.effect__title {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 24px;
+  padding-right: 46%;
+
+  @media (min-width: 1200px) {
+    padding-right: 0;
+  }
+}
+
+.effect__text {
+  margin-bottom: 24px;
+}
+
+.effect__link {
+  color: $lightred;
+}

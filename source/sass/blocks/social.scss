@@ -1,0 +1,38 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 24px;
+
+  @media (min-width: 660px) {
+    padding: 0;
+  }
+}
+
+.social__item {
+  margin-right: 14px;
+  margin-bottom: 14px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  @include link;
+  width: 54px;
+  height: 54px;
+  background-color: $basicwhite;
+  border: 3px solid rgba($basickgrey, 0.1);
+  border-radius: 50%;
+
+  &:hover {
+    border-color: $basickgrey;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  transition: all 0.3s ease 0s;
+}

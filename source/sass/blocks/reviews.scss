@@ -1,0 +1,128 @@
+.reviews {
+  background-color: $basicwhite;
+  padding-top: 50px;
+  padding-bottom: 11px;
+
+  @media (min-width: 1200px) {
+    position: relative;
+    padding-top: 193px;
+    background-image: url("/img/icon/quotes.svg");
+    background-repeat: no-repeat;
+    background-size: 79px 63px;
+    background-position: center 72px;
+    padding-bottom: 0;
+  }
+}
+
+.reviews__list {
+  text-align: center;
+  line-height: 30px;
+
+  @media (min-width: 1200px) {
+    width: 690px;
+    margin: 0 auto;
+  }
+}
+
+.reviews__item--current {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.reviews__text {
+  margin-bottom: 41px;
+
+  @media (min-width: 660px) {
+    font-size: 18px;
+    margin-bottom: 51px;
+  }
+}
+
+.reviews__author {
+  font-style: inherit;
+  color: $basicblack;
+
+  @media (min-width: 660px) {
+    order: -1;
+  }
+}
+
+.reviews__author-name {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 31px;
+
+  @media (min-width: 660px) {
+    font-size: 20px;
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 24px;
+  }
+}
+
+.reviews__author-age {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+    font-size: inherit;
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
+
+.reviews__prev,
+.reviews__next {
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: block;
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    border: 2px solid $alphabasickgrey;
+    border-radius: 1px;
+    background-color: $basicwhite;
+    transform: rotate(45deg);
+    top: 231px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &:hover {
+    border-color: rgba($basickgrey, 0.6);
+  }
+
+  &:active {
+    border-color: rgba($basickgrey, 0.1);
+  }
+}
+
+.reviews__prev {
+  left: 0;
+  border-right: transparent;
+  border-top: transparent;
+}
+
+.reviews__next {
+  right: 0;
+  border-left: transparent;
+  border-bottom: transparent;
+}
+
+.reviews__toggles {
+  @include flex;
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.reviews__toggle {
+  @include toggle;
+}
